@@ -1,0 +1,226 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+}
+
+body,
+.example h1,
+.example p,
+.example .button {
+  transition: all .2s ease-in-out;
+}
+
+body.light-theme {
+  background-color: #151515;
+}
+
+body.light-theme .example h1 {
+  color: #FFFFFF;
+}
+
+body.light-theme .example p {
+  color: #FFFFFF;
+}
+
+body.light-theme .buttons .button {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+body.light-theme .buttons .button:hover {
+  color: #151515;
+  background-color: #FFFFFF;
+}
+
+.example {
+  font-family: 'Roboto', sans-serif;
+  width: 585px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.example .flipdown {
+  margin: auto;
+}
+
+.example h1 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 3em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.rotor {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.example p {
+  text-align: center;
+  font-weight: 100;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.example .buttons {
+  width: 100%;
+  height: 50px;
+  margin: 50px auto 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.example .buttons p {
+  height: 50px;
+  line-height: 50px;
+  font-weight: 400;
+  padding: 0px 25px 0px 0px;
+  color: #333;
+  margin: 0px;
+}
+
+.example .button {
+  display: inline-block;
+  height: 50px;
+  box-sizing: border-box;
+  line-height: 46px;
+  text-decoration: none;
+  color: #333;
+  padding: 0px 20px;
+  border: solid 2px #333;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all .2s ease-in-out;
+}
+
+.example .button:hover {
+  background-color: #333;
+  color: #FFF;
+}
+
+.example .button i {
+  margin-right: 5px;
+}
+
+/* Rotor group headings */
+.flipdown.flipdown__theme-light .rotor-group-heading:before {
+  color: rgb(74, 85, 104) !important;
+  font-size: 12px;
+}
+
+/* Rotor tops */
+.flipdown.flipdown__theme-light .rotor,
+.flipdown.flipdown__theme-light .rotor-top,
+.flipdown.flipdown__theme-light .rotor-leaf-front {
+  background-color: white !important;
+}
+
+/* Rotor bottoms */
+.flipdown.flipdown__theme-light .rotor-bottom,
+.flipdown.flipdown__theme-light .rotor-leaf-rear {
+  background-color: white !important;
+}
+
+.flipdown {
+  width: 545px !important;
+  height: 130px !important;
+}
+
+.flipdown .rotor-group {
+  position: relative;
+  float: left;
+  padding: 20px 20px 5px 20px !important;
+  background-color: white;
+  border-radius: 5px;
+  margin-right: 16px !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.flipdown .rotor-group:last-child {
+  margin-right: 0px !important;
+}
+
+.flipdown .rotor {
+  position: relative;
+  float: left;
+  width: 41px !important;
+  height: 80px;
+  margin: 0px 0px 0px 0px !important;
+  border-radius: 4px;
+  font-size: 4rem;
+  text-align: center;
+  perspective: 200px;
+}
+
+@media(max-width: 585px) {
+
+  .flipdown {
+    width: 334px !important;
+    height: 70px !important;
+  }
+
+  .flipdown .rotor {
+    font-size: 2.2rem;
+    width: 25px !important;
+    height: 50px;
+  }
+
+  .flipdown .rotor-group {
+    padding: 8px 8px 0px 8px!important;
+  }
+
+  .flipdown .rotor-group:last-child {
+    margin-right: 0px !important;
+  }
+
+  .flipdown.flipdown__theme-light .rotor-group-heading:before {
+    font-size: 9px;
+  }
+
+  .example {
+    width: 100%;
+    height: 362px;
+    padding: 0px;
+  }
+
+  .example h1 {
+    font-size: 2.5em;
+  }
+
+  .example p {
+    margin-bottom: 25px;
+  }
+
+  .example .buttons {
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+    display: block;
+  }
+
+  .example .buttons p,
+  .example .buttons a {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .example .buttons p {
+    padding-right: 0px;
+  }
+
+  .example .buttons a {
+    display: inline-block;
+  }
+}
